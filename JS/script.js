@@ -11,4 +11,8 @@ alert("Hello, " + person + " your new pet-mate is so excited to play and spend t
 alert("Before we let you go, there are a few things you should know to keep your pet happy.");
 alert("Your pet loves to eat, sleep and play all day. Keep each of their levels up by interacting with them to prevent them from dying");
 
+let pet = prompt("Have Fun! What shall you name your pet?")
+
+alert("Awesome! Let's meet" + pet + " !");
+
 });
