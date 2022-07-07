@@ -7,9 +7,39 @@ body {
     background-size: cover;
 }
 
+@keyframes slidein {
+    from {
+        margin-left: 40%;
+        width: 10%;
+      }
+    
+      to {
+        margin-left: 50%;
+        width: 10%;
+      }
+    }
+    
 
-.monkey{
-    width: 155px;
+#monkey-holder {
+    animation-name: slidein;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 3s, 3s;
+    z-index: 1000;
+   
+
+}
+
+
+
+
+.monkey {
+    width: 200px;
     height: auto;
 }
   
