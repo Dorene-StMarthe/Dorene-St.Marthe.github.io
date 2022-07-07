@@ -13,11 +13,15 @@ alert("Your pet loves to eat, sleep and play all day. Keep each of their levels 
 
 let pet = prompt("Have Fun! What shall you name your pet?")
 
-alert("Awesome! Let's meet " + pet + " !");
+playGame("Awesome! Take good care of " + pet + " !");
+
+function playGame(){
+  let result = confirm( "Awesome name! Are you ready to take " + pet + " home?!");
+  if (result == false) {
+    event.preventDefault();
+  }}
 
 });
-
-
 
 
 
