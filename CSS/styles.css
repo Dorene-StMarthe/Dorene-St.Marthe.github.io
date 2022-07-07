@@ -2,15 +2,11 @@
 body {
     background-image: url("/CSS/Office.jpg");
     background-repeat: no-repeat;  
-}
-
-@media only screen and (min-width: 768px) {
-    body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 800px;
     height: 800px;
-    }}
+    background-position: center;
+    background-size: cover;
+}
     
 
 #enter {
