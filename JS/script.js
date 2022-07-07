@@ -13,6 +13,6 @@ alert("Your pet loves to eat, sleep and play all day. Keep each of their levels 
 
 let pet = prompt("Have Fun! What shall you name your pet?")
 
-alert("Awesome! Let's meet" + pet + " !");
+alert("Awesome! Let's meet " + pet + " !");
 
 });
