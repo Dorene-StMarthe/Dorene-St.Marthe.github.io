@@ -16,3 +16,13 @@ let pet = prompt("Have Fun! What shall you name your pet?")
 alert("Awesome! Let's meet " + pet + " !");
 
 });
+
+
+
+
+
+
+
+//Next steps:
+// Need to onclick to home base and add css animation for pet. align left to right
+//Need to add in 
