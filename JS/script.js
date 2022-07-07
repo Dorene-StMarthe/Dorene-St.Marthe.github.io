@@ -1,5 +1,5 @@
 
-const enter = document.querySelector('#enter');
+const enter = document.querySelector('.enter');
 enter.addEventListener('click', () => {
 
 alert("Hi! Congratulations on adopting your tamagotchi pet!");
@@ -16,7 +16,7 @@ let pet = prompt("Have Fun! What shall you name your pet?")
 playGame("Awesome! Take good care of " + pet + " !");
 
 function playGame(){
-  let result = confirm( "Awesome name! Are you ready to take " + pet + " home?!");
+  let result = confirm( "Awesome name! Click the 'Play Game' button below to meet" + pet + " at home!");
   if (result == false) {
     event.preventDefault();
   }}
