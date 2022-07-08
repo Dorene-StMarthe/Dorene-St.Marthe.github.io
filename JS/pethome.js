@@ -1,19 +1,5 @@
-
-
-
-
-setInterval ("increaseNumber()", 2000);
-function increaseNumber (){
-    let element = document.getElementsByClassName('Play');
-    let value = element.innerHTML;
-    ++value;
-    console.log(value)
-    document.getElementsByClassName('Play').innerHTML = value;
-    
-}
-    
-//
-let btnIncPlay = document.querySelector('#incPlay');
+//toggle decreased 
+let btnIncPlay = document.querySelector('.incPlay');
 let input = document.querySelector('.Play');
 
 btnIncPlay.addEventListener('click', () => {
@@ -21,7 +7,7 @@ btnIncPlay.addEventListener('click', () => {
 });
 
 
-let btnIncFeed = document.querySelector('#incFeed');
+let btnIncFeed = document.querySelector('.incFeed');
 let input1 = document.querySelector('.Feed');
 
 btnIncFeed.addEventListener('click', () => {
@@ -29,7 +15,7 @@ btnIncFeed.addEventListener('click', () => {
 });
 
 
-let btnLightsToggle = document.querySelector('#lightsToggle');
+let btnLightsToggle = document.querySelector('.lightsToggle');
 let input2 = document.querySelector('.Lights');
 
 btnLightsToggle.addEventListener('click', () => {
@@ -39,7 +25,15 @@ btnLightsToggle.addEventListener('click', () => {
 });
 
 //
-
+class GotchiPet {
+    constructor (name, boredom, hunger, sleepiness, age){
+        this.name = name
+        this.boredom = boredom
+        this.hunger = hunger
+        this. sleepiness = sleepiness
+        this. age = age
+    }
+}
 
 
 
