@@ -16,17 +16,10 @@ let pet = prompt("Have Fun! What shall you name your pet?")
 playGame("Awesome! Take good care of " + pet + " !");
 
 function playGame(){
-  let result = confirm( "Awesome name! Click the 'Play Game' button below to meet" + pet + " at home!");
+  let result = confirm( "Awesome name! Click the 'Play Game' button below to meet " + pet + " at home!");
   if (result == false) {
     event.preventDefault();
   }}
 
 });
 
-
-
-
-
-//Next steps:
-// Need to onclick to home base and add css animation for pet. align left to right
-//Need to add in 
