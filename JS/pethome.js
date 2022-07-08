@@ -12,3 +12,18 @@ function lightsFunction() {
     element.classList.toggle("dark-mode");
 }
 
+function incPlay() {
+    let element = document.getElementById('letsPlay');
+    let value = element.innerHTML;
+    ++value;
+    console.log(value)
+    document.getElementById('letsPlay').innerHTML = value;
+}
+
+function incFeed() {
+    let element = document.getElementById('feedMe');
+    let value = element.innerHTML;
+    ++value;
+    console.log(value)
+    document.getElementById('feedMe').innerHTML = value;
+}

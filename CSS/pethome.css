@@ -14,13 +14,14 @@ body {
 }
 
 /* Gotchi Nav Bar*/
-.topnav {
+#topnav {
     overflow: hidden;
     background-color: transparent;
+    cursor: pointer;
    
   }
   
-  .topnav a{
+  #topnav a{
     float: left;
     color: blue;
     text-align: center;
@@ -32,12 +33,12 @@ body {
    
   }
   
-  .topnav a:hover {
+  #topnav a:hover {
     background-color: #ddd;
     color: yellow;
   }
   
-  .topnav a.active {
+  #topnav a.active {
     color: white
   }
   /* animated monkey-pet*/

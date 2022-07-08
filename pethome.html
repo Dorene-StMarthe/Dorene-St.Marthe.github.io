@@ -10,12 +10,24 @@
 </head>
 <body>
     
-<div class="topnav">
-  
- <button onclick ="buttonClick()"><a href="#">Let's Play</a></button>
- <button onclick ="buttonClick()"><a href="#">Feed Me</a></button>
- <button onclick ="lightsFunction()"><a href="#">Lights On/Off</a></button>
+<nav id="topnav">
+  <div>
+    <h1 id = "letsPlay">0</h1>
+        <button onclick ="incPlay()"><a href="#">Let's Play</a></button>
+    </h1>
   </div>
+  <div>
+    <h1 id = "feedMe">0</h1>
+        <button onclick ="incFeed()"><a href="#">Feed Me</a></button>
+    </h1>
+ </div>
+
+ <div>
+    <h1>
+     <button onclick ="lightsFunction()"><a href="#">Lights On/Off</a></button>
+    </h1>
+</div>
+</nav>
 
 
     <div id="monkey-holder">
