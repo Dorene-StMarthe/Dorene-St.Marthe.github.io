@@ -7,7 +7,7 @@ sleepiness: 1,
 //console.log(game.hungry);
 
 
-function lightsFunction() {
+function lightsOnOff() {
     let element = document.body;
     element.classList.toggle("dark-mode");
 }
@@ -26,4 +26,12 @@ function incFeed() {
     ++value;
     console.log(value)
     document.getElementById('feedMe').innerHTML = value;
+}
+
+function lights() {
+    let element = document.getElementById('lightsToggle');
+    let value = element.innerHTML;
+    ++value;
+    console.log(value)
+    document.getElementById('lightsToggle').innerHTML = value;
 }
