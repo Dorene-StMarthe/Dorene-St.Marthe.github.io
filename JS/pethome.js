@@ -2,9 +2,17 @@
 
 
 
+setInterval ("increaseNumber()", 2000);
+function increaseNumber (){
+    let element = document.getElementsByClassName('Play');
+    let value = element.innerHTML;
+    ++value;
+    console.log(value)
+    document.getElementsByClassName('Play').innerHTML = value;
     
+}
     
-// button toggle to decrease time
+//
 let btnIncPlay = document.querySelector('#incPlay');
 let input = document.querySelector('.Play');
 
@@ -26,8 +34,11 @@ let input2 = document.querySelector('.Lights');
 
 btnLightsToggle.addEventListener('click', () => {
     input2.value = parseInt(input2.value) - 1;
+    let element = document.body;
+    element.classList.toggle("dark-mode");
 });
 
+//
 
 
 
@@ -64,7 +75,6 @@ function lights() {
 function lightsOnOff() {
     let element = document.body;
     element.classList.toggle("dark-mode");
-}
 
 
 //conditions
