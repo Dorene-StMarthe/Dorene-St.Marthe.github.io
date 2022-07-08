@@ -4,6 +4,11 @@ bordom: 1,
 sleepiness: 1,
 };
 
-console.log(game.hungry);
+//console.log(game.hungry);
 
-document.addEventListener("click", addOrSubtract);
+
+function lightsFunction() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
