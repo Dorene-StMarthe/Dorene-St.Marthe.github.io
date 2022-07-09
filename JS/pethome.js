@@ -29,12 +29,8 @@ btnLightsToggle.addEventListener('click', () => {
 });
 
 
-//timers
-
-
-
-
-let food= setInterval(hungryTab, 1000);
+//timers - set and clear
+let food= setInterval(hungryTab, 3000);
 function hungryTab() {
     let element = document.getElementById('timerFeed');
     console.log(element)
@@ -42,24 +38,26 @@ function hungryTab() {
     value++;
     document.getElementById('timerFeed').value = value;
     if (value === 10){clearInterval(food); {
-        alert("Oh no! your pet died from starvation!");
+        alert("Oh no! Your pet died from starvation!");
     };}
    }
 
 
-let fun= setInterval(boredomTab, 1000);
+let fun= setInterval(boredomTab, 3000);
 function boredomTab() {
     let element = document.getElementById('timerPlay');
     console.log( element)
     let value = element.value;
     console.log(value);
     value++;
-    console.log( value);
+    console.log(value);
     document.getElementById('timerPlay').value = value;
-    if (value === 10) clearInterval(fun);
+    if (value === 10) {clearInterval(fun); {
+    alert("Oh no! Your pet died from neglect!");
+};}
 }
 
-let sleep = setInterval(sleepyTab, 1000);
+let sleep = setInterval(sleepyTab, 3000);
 function sleepyTab() {
     let element = document.getElementById('timerLights');
     console.log(element)
@@ -67,10 +65,12 @@ function sleepyTab() {
     console.log(value);
     value++;
     document.getElementById('timerLights').value = value;
-    if (value === 10) clearInterval(sleep);
-}
+    if (value === 10){clearInterval(sleep); {
+    alert("Oh no! Your pet died from sleep deprivation!");
+};}}
 
-setInterval(ageTab, 15000);
+// Age//
+setInterval(ageTab, 9000);
 function ageTab() {
     let element = document.getElementById('age');
     console.log(element)
@@ -79,11 +79,6 @@ function ageTab() {
     value++;
     console.log( value);
     document.getElementById('age').innerHTML = value;
-}
-
-function stopInterval() {
-    clearInterval(10)
-    console.log(stopInterval)
 }
 
 
