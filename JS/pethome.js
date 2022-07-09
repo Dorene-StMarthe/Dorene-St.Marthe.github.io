@@ -1,5 +1,4 @@
 
-
 //DOM and Event Listeners
 let btnIncPlay = document.querySelector('.incPlay');
 let input = document.querySelector('.Play');
@@ -70,7 +69,7 @@ function sleepyTab() {
 };}}
 
 // Age//
-setInterval(ageTab, 9000);
+setInterval(ageTab, 10000);
 function ageTab() {
     let element = document.getElementById('age');
     console.log(element)
@@ -78,119 +77,35 @@ function ageTab() {
     console.log(value);
     value++;
     console.log( value);
+    if (value == 5) {
+        alert("Yay! your pet has grown into a teenager!")
+        document.querySelector(".gotchi").src = "CSS/teen.png"
+    }
+    if (value == 10) {
+        alert("Yay! your pet has grown into an adult!")
+        document.querySelector(".gotchi").src = "CSS/adult.png"
+    }
     document.getElementById('age').innerHTML = value;
 }
 
 
 
 
-/*let intervalID;
-let timer = document.getElementById('timerLights')
+// Classes for evolving////////////////////////////////
+/*class babyPet {
+    constructor(name, hunger, sleepiness, age){
+        this.name = name;
+        this.hunger = hunger;
+        this.sleepiness = sleepiness;
+        this.age = age;
+    }}
 
-const timerStop = () => {
-    clearInterval(intervalID)
-timer.value =10;
-}
-/*
+let teenPet = new babyPet()
+//let grownupPet = new babyPet (teenager, hunger, sleepiness, 5);
 
-
-c
-//
-
-
-
-/////// timer (needs to be revisited)////
-
-
-/////////////////////////////////////////////////////////
-
-/*const ageText = document.querySelector('Play');
-const startPlay = document.querySelector('incPlay');
-
-let count = 0;
-
-startPlay.addEventListener('click', function() {
-    setInterval(function() {
-        count += 1;
-    ageText.textContent = count;
-}, 1000);
-});
-
-
-
-
-
-
-
-
-
-/*btnIncPlay.addEventListener('click', () => {
-    press (
-        if (input.value)
-    )
-    let timer = setInterval(press, 2000);
-
-    })
-
-
-
-//classes 
-class Game {
-    constructor (name, boredom, hunger, sleepiness, age){
-        this.name = name,
-        this.boredom = boredom,
-        this.hunger = hunger,
-        this. sleepiness = sleepiness,
-        this. age = age
-    }
-}
-
-  setInterval(timer, 3000);
-    function timer() {
-    let element = document.getElementsBy('Play');
-    let value = element.innerHTML;
-    ++value;
-    console.log(value)
-    document.getElementsByClassName('Play').innerHTML = value;}
-    /*
-
-//feeding toggle
-setInterval(incFeed, 3000);
-function incFeed() {
-    let element = document.getElementById('feedMe');
-    let value = element.innerHTML;
-    ++value;
-    console.log(value);
-    document.getElementById('feedMe').innerHTML = value;
-}
-//lights toggle
-setInterval(lights, 3000);
-function lights() {
-    let element = document.getElementById('lightsToggle');
-    let value = element.innerHTML;
-    ++value;
-    console.log(value)
-    document.getElementById('lightsToggle').innerHTML = value;
-}
-function lightsOnOff() {
-    let element = document.body;
-    element.classList.toggle("dark-mode");
-
-
-//conditions
-
-//Array of Functions
-
-//if (this.incPlay[value] >= 10) {
-  //  alert( "Your pet has died and gone to pet heaven!")
-//this.value -=10;
-
-
-setInterval(incPlay, 3000);
-    function incPlay() {
-    let element = document.getElementById('letsPlay');
-    let value = element.innerHTML;
-    ++value;
-    console.log(value)
-    document.getElementById('letsPlay').innerHTML = value;
-    }*/
+class babyPet extends teenPet {
+    constructor(name, hunger, sleepiness, age){
+        super(name, hunger, sleepiness, boredom, age)
+        this.name = name;
+        this.hunger = hunger;
+    }}*/
