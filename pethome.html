@@ -10,27 +10,31 @@
 </head>
 <body>
     
-<nav id="topnav">
+<nav id="topnav" onload = "timer">
   <div>
     <button class = "incPlay">Let's Play</button>
-     <input class = "Play" type ="text" value= "0">
+     <input id="timerPlay" class = "Play" type ="text" value= "0">
   
   </div>
   <div>
-        <button class = "incFeed">Feed Me</button>
-        <input class = "Feed"type ="text" value= "0">
+        <button  class = "incFeed">Feed Me</button>
+        <input id= "timerFeed" class = "Feed" type ="number" value= "0">
  </div>
 
  <div>
      <button class = "lightsToggle">Light's On/Off</button>
-     <input class = "Lights" type ="text" value= "0">
+     <input id = "timerLights" class = "Lights" type ="text" value= "0">
     
+</div>
+<div>
+    <h3 class = "announceAge">Your pet's age is: </h3>
+    <h2 id= "age">0</h2> 
 </div>
 </nav>
 
 
     <div id="monkey-holder">
-        <img src="CSS/petmonkey.png" class= "monkey" alt="pet monkey character">
+        <img src="CSS/petmonkey.png" class= "gotchi" alt="pet monkey character">
     </div>
    
 

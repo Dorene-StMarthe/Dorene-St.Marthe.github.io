@@ -13,6 +13,10 @@ body {
     color:white;
 }
 
+.play-mode {
+  background-image: url("/CSS/Playground.jpg");
+  color: dark blue;
+}
 /* Gotchi Nav Bar*/
 #topnav {
     
@@ -79,7 +83,7 @@ body {
 }
 
 
-.monkey {
+.gotchi {
     width: 200px;
     height: auto;
 }
