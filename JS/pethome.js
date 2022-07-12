@@ -42,7 +42,7 @@ function hungryTab() {
    }
 
 
-let fun= setInterval(boredomTab, 3000);
+let fun= setInterval(boredomTab, 4000);
 function boredomTab() {
     let element = document.getElementById('timerPlay');
     console.log( element)
@@ -56,7 +56,7 @@ function boredomTab() {
 };}
 }
 
-let sleep = setInterval(sleepyTab, 3000);
+let sleep = setInterval(sleepyTab, 5000);
 function sleepyTab() {
     let element = document.getElementById('timerLights');
     console.log(element)
@@ -79,8 +79,7 @@ function ageTab() {
     console.log( value);
     if (value == 5) {
         alert("Yay! your pet has grown into a teenager!")
-        document.querySelector(".gotchi").src = "CSS/teen.png"
-    }
+        document.querySelector(".gotchi").src = "CSS/teen.png"}
     if (value == 10) {
         alert("Yay! your pet has grown into an adult!")
         document.querySelector(".gotchi").src = "CSS/adult.png"
@@ -91,7 +90,7 @@ function ageTab() {
 
 
 
-// Classes for evolving////////////////////////////////
+// Classes 
 /*class babyPet {
     constructor(name, hunger, sleepiness, age){
         this.name = name;
