@@ -68,6 +68,13 @@ function sleepyTab() {
     alert("Oh no! Your pet died from sleep deprivation!");
 };}}
 
+
+function gameOver(sleepyTab, boredomeTab, hungryTab)
+    if (value === 10) {
+        setTimeout;
+    }
+
+
 // Age//
 setInterval(ageTab, 10000);
 function ageTab() {
@@ -77,10 +84,10 @@ function ageTab() {
     console.log(value);
     value++;
     console.log( value);
-    if (value == 5) {
+    if (value == 3) {
         alert("Yay! your pet has grown into a teenager!")
         document.querySelector(".gotchi").src = "CSS/teen.png"}
-    if (value == 10) {
+    if (value == 9) {
         alert("Yay! your pet has grown into an adult!")
         document.querySelector(".gotchi").src = "CSS/adult.png"
     }
