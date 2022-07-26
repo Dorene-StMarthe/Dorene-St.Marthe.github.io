@@ -32,12 +32,12 @@ btnLightsToggle.addEventListener('click', () => {
 let food= setInterval(hungryTab, 3000);
 function hungryTab() {
     let element = document.getElementById('timerFeed');
-    console.log(element)
     let value = element.value;
     value++;
     document.getElementById('timerFeed').value = value;
     if (value === 10){clearInterval(food); {
         alert("Oh no! Your pet died from starvation!");
+        gameOver()
     };}
    }
 
@@ -45,34 +45,28 @@ function hungryTab() {
 let fun= setInterval(boredomTab, 4000);
 function boredomTab() {
     let element = document.getElementById('timerPlay');
-    console.log( element)
     let value = element.value;
-    console.log(value);
     value++;
     console.log(value);
     document.getElementById('timerPlay').value = value;
     if (value === 10) {clearInterval(fun); {
     alert("Oh no! Your pet died from neglect!");
+    gameOver()
 };}
 }
 
-let sleep = setInterval(sleepyTab, 5000);
+let sleep = setInterval(sleepyTab, 2000);
 function sleepyTab() {
     let element = document.getElementById('timerLights');
-    console.log(element)
     let value = element.value;
-    console.log(value);
     value++;
     document.getElementById('timerLights').value = value;
-    if (value === 10){clearInterval(sleep); {
+    if (value === 10)
+    {clearInterval(sleep); {
     alert("Oh no! Your pet died from sleep deprivation!");
+    gameOver()
 };}}
 
-
-function gameOver(sleepyTab, boredomeTab, hungryTab)
-    if (value === 10) {
-        setTimeout;
-    }
 
 
 // Age//
@@ -81,9 +75,7 @@ function ageTab() {
     let element = document.getElementById('age');
     console.log(element)
     let value = element.innerHTML;
-    console.log(value);
     value++;
-    console.log( value);
     if (value == 3) {
         alert("Yay! your pet has grown into a teenager!")
         document.querySelector(".gotchi").src = "CSS/teen.png"}
@@ -91,10 +83,18 @@ function ageTab() {
         alert("Yay! your pet has grown into an adult!")
         document.querySelector(".gotchi").src = "CSS/adult.png"
     }
+    
     document.getElementById('age').innerHTML = value;
 }
 
 
+function gameOver() {
+    let game = document.getElementById('timerLights', 'timerPlay', 'timerFeed').innerHTML = value;
+    if (game == 10) {
+        clearInterval(game.value);
+        document.querySelector(".gotchi").src = "CSS/dead-g1ca0d534f_1280.png"
+        
+    }}
 
 
 // Classes 
