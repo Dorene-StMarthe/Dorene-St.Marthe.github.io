@@ -49,7 +49,8 @@ function boredomTab() {
     value++;
     console.log(value);
     document.getElementById('timerPlay').value = value;
-    if (value === 10) {clearInterval(fun); {
+    if (value === 10) 
+    {clearInterval(fun); {
     alert("Oh no! Your pet died from neglect!");
     gameOver()
 };}
@@ -70,10 +71,10 @@ function sleepyTab() {
 
 
 // Age//
-setInterval(ageTab, 10000);
+let gotchiAge = setInterval(ageTab, 10000);
 function ageTab() {
     let element = document.getElementById('age');
-    console.log(element)
+    //console.log(element)
     let value = element.innerHTML;
     value++;
     if (value == 3) {
@@ -86,15 +87,17 @@ function ageTab() {
     
     document.getElementById('age').innerHTML = value;
 }
-
+let game = [ food, fun, sleep, gotchiAge];
 
 function gameOver() {
-    let game = document.getElementById('timerLights', 'timerPlay', 'timerFeed').innerHTML = value;
-    if (game == 10) {
-        clearInterval(game.value);
+    let game = [ food, fun, sleep];
+    let element = document.getElementById('age' );
+    let value = element.value;
+    if (game.value == 10) {
+        clearInterval(gotchiAge)
         document.querySelector(".gotchi").src = "CSS/dead-g1ca0d534f_1280.png"
-        
-    }}
+    }
+    }
 
 
 // Classes 
