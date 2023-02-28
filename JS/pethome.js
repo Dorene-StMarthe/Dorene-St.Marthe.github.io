@@ -95,7 +95,7 @@ function gameOver() {
     let value = element.value;
     if (game.value == 10) {
         clearInterval(gotchiAge)
-        document.querySelector(".gotchi").src = "CSS/dead-g1ca0d534f_1280.png"
+        document.querySelector("img").setAttribute("src", "CSS/dead-g1ca0d534f_1280.png")
     }
     }
 
